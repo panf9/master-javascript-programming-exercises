@@ -1,6 +1,10 @@
 function removeNumberValues(obj) {
     // your code here
-    
+    for ( let i in obj ){
+        if ( typeof obj[i] === 'number' ){
+            delete obj[i]
+        }
+    }
 }
 
 let obj = {

@@ -1,5 +1,13 @@
 function getEvenElementsAtProperty(obj, key) {
-    // your code here
+    // your code hereç
+    if ( key in obj ){
+      if ( Array.isArray(obj[key])){
+        let arr = obj[key].filter(element => element%2===0)
+        return arr;
+      }
+      return [];
+    }
+    return [];
     
 }
 
